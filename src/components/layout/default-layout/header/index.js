@@ -18,6 +18,11 @@ class Header extends Component {
           </div>
           <ul>
             <li>
+              <NavLink to="/" exact activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/posts" activeClassName="active">
                 Posts
               </NavLink>
