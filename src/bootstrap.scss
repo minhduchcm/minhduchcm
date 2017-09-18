@@ -1,1 +1,17 @@
 @import "~bootstrap/scss/bootstrap.scss";
+
+$theme-colors: (
+    primary: rgb(67, 186, 255),
+    secondary: #777,
+    success: #b1bc46,
+    info: #5098b5,
+    warning: #ff8a47,
+    danger: #ff585c,
+    light: #fafafa,
+    dark: #313d42
+  )
+  !default;
+
+body {
+  background-color: #f0f0f0;
+}
