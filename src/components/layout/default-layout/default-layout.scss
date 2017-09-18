@@ -1,0 +1,51 @@
+@import "../../../variables";
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .header-wrapper {
+    width: 100%;
+    .header {
+      .logo {
+        padding: 15px;
+        float: left;
+        a {
+          font-family: "Lobster";
+          font-size: 18pt;
+          color: my-color("primary");
+          font-weight: bold;
+        }
+      }
+      ul {
+        list-style: none;
+        float: right;
+        li {
+          float: left;
+          a {
+            color: my-color("dark");
+            display: block;
+            padding: 19px;
+            font-size: 12pt;
+          }
+
+          &:hover {
+            cursor: pointer;
+            a {
+              color: my-color("primary");
+            }
+          }
+          .active {
+            color: my-color("primary");
+          }
+        }
+      }
+    }
+  }
+  .main-content {
+    flex-grow: 1;
+  }
+}

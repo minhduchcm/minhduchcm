@@ -1,0 +1,15 @@
+$colors: (
+  "primary": #44b3c2,
+  "warning": #f1a94e,
+  "danger": #e45641,
+  "info": #5d4c46,
+  "dark": #111,
+  "light": #7b8d8e,
+  "lighter": #f2edd8
+);
+
+@function my-color($key: "primary") {
+  @return map-get($colors, $key);
+}
+
+$header-height: 60px;
