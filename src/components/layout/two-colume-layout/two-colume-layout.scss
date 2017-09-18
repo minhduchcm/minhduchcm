@@ -1,0 +1,14 @@
+.two-colume-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .colume-1 {
+    flex-grow: 1;
+    min-width: 480px;
+  }
+
+  .colume-2 {
+    flex-grow: 1;
+    max-width: 480px;
+  }
+}

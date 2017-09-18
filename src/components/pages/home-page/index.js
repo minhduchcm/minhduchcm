@@ -1,10 +1,5 @@
-import React, { Component } from "react";
+import TwoColumeLayout from "../../layout/two-colume-layout";
+import Content from "./home-page-content";
+import SideBar from "../../side-bar";
 
-class HomePage extends Component {
-  state = {};
-  render() {
-    return <div>Home Page</div>;
-  }
-}
-
-export default HomePage;
+export default TwoColumeLayout(Content, SideBar);
