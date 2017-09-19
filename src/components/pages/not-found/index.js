@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import "./not-found.scss";
 
 class NotFound extends Component {
   state = {};
   render() {
-    return <div>Not Page</div>;
+    return <div id="not-found">Not Page</div>;
   }
 }
 

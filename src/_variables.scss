@@ -1,11 +1,12 @@
 $colors: (
-  "primary": #44b3c2,
+  "primary": #13c0e7,
+  "success": #92bb74,
   "warning": #f1a94e,
-  "danger": #e45641,
-  "info": #5d4c46,
-  "dark": #111,
-  "light": #7b8d8e,
-  "lighter": #f2edd8
+  "danger": #d76458,
+  "info": #dc5dec,
+  "dark": #282c34,
+  "light": #2c313a,
+  "lighter": #f2fdf8
 );
 
 @function my-color($key: "primary") {

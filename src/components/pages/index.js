@@ -1,19 +1,8 @@
-import HomePage from "./home-page";
-import Posts from "./posts";
-import Categories from "./categories";
-import About from "./about-me";
-import Contact from "./contact";
-import Projects from "./projects";
-import MyCv from "./my-cv";
+import PostsPage from "./posts-page";
+import AboutPage from "./about-page";
+import ContactPage from "./contact-page";
+import WorkPage from "./work-page";
+import CvPage from "./cv-page";
 import NotFound from "./not-found";
 
-export {
-  HomePage,
-  Posts,
-  Categories,
-  About,
-  Contact,
-  Projects,
-  MyCv,
-  NotFound
-};
+export { PostsPage, AboutPage, ContactPage, WorkPage, CvPage, NotFound };

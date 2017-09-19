@@ -1,0 +1,8 @@
+{
+  "name": "my-blog",
+  "description": "Blog Cloud Functions",
+  "dependencies": {
+    "firebase-admin": "^5.2.1",
+    "firebase-functions": "^0.6.3"
+  }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Header from "./header";
+import Nav from "./nav";
 import "./default-layout.scss";
 
 class DefaultLayout extends Component {
@@ -25,10 +25,8 @@ class DefaultLayout extends Component {
     const { children } = this.props;
     return (
       <div className="container">
-        <Header ref="header" />
-        <div className="main-content" style={{ height: 1500 }}>
-          {children}
-        </div>
+        <Nav />
+        {children}
       </div>
     );
   }

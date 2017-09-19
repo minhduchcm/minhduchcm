@@ -1,8 +1,15 @@
 import { connect } from "react-redux";
+import { compose } from "redux";
+import { firebaseConnect, pathToJS } from "react-redux-firebase";
+
 import LoginWidget from "./login-widget";
 
 const mapStateToProps = state => {
-  return {};
+  return {
+    auth: pathToJS(state.firebase, "auth")
+  };
 };
 
-export default connect(mapStateToProps)(LoginWidget);
+export default compose(firebaseConnect(), connect(mapStateToProps))(
+  LoginWidget
+);

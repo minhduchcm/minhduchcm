@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  color: color(dark);
+  color: my-color("dark");
 }
 
 a {
@@ -18,5 +18,43 @@ a {
   min-height: 100px;
   &:hover {
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+code {
+  text-align: left;
+  .link {
+    text-decoration: underline;
+  }
+  .line {
+    display: block;
+    &:hover {
+      background-color: my-color("light");
+    }
+    .tab {
+      padding: 0 20px 0 0;
+    }
+  }
+  .token {
+    display: inline-block;
+
+    &.name {
+      color: my-color("lighter");
+    }
+    &.punctuation {
+      color: my-color("lighter");
+    }
+    &.operator {
+      color: my-color("primary");
+    }
+    &.keywork {
+      color: my-color("info");
+    }
+    &.property {
+      color: my-color("primary");
+    }
+    &.value {
+      color: my-color("success");
+    }
   }
 }

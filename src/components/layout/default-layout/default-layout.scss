@@ -1,35 +1,26 @@
 @import "../../../variables";
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
-  max-width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
 
-  .header-wrapper {
+  .nav-wrapper {
     width: 100%;
-    margin-bottom: 10px;
-    .header {
-      .logo {
-        padding: 15px;
-        float: left;
-        a {
-          font-family: "Lobster";
-          font-size: 18pt;
-          color: my-color("primary");
-          font-weight: bold;
-        }
-      }
+    position: fixed;
+    z-index: 10;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    .nav {
+      display: flow-root;
       ul {
         list-style: none;
         float: right;
         li {
           float: left;
           a {
-            color: my-color("dark");
+            color: my-color("lighter");
             display: block;
-            padding: 19px;
+            padding: 19px 18px;
             font-size: 12pt;
           }
 
@@ -46,7 +37,8 @@
       }
     }
   }
-  .main-content {
-    flex-grow: 1;
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
